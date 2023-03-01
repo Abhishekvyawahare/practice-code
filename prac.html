@@ -1,0 +1,38 @@
+<html>
+<header>
+    <script type="text/javascript">
+        function studentvalidate(){
+
+                var name=/^[a-zA-Z]+[a-zA-z]+$/;
+                var fname=document.getElementById('fsname').values;
+                var age=document.getElementById('age').values;
+
+                if(age<18||age>50)
+                alert("invalid");
+                if(!name.test(fname))
+                alert("invalid")
+                }
+
+
+
+
+</script>
+<body>
+<form>
+
+<h1> student reg</h1>
+            student first name:
+            <input type="text" name="fsname" id="fsname">
+            age:
+            <input type="text" name="age" id="age">
+            valiadate:
+
+            <input type="button" value="valiadate" onclick="studentvalidate">
+</form>
+
+</body>
+
+
+</header>
+
+</html>

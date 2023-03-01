@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<script type="text/javascript">
+
+    function validatestudent(){
+var regName=/^[a-zA-z]+[a-zA-Z]+$/;
+var fname=document.getElementById('fsname').value;
+var lname=document.getElementById('lsname').value;
+var age=document.getElementById('age').value;
+
+if(age<18||age<50)
+alret("dtudent name not mater")
+if(!regName.test(fname))
+alert("invalid")
+if(regName.test(lnamee))
+alert("in")
+
+
+
+    }
+</script>
+
+</head>
+<body>
+
+<form>
+<h1>student form:</h1>
+student first name:
+<input type="text" name="fname" id="fsname"> <br>
+last name :
+<input type="text" name="lname" id="lsname"><br>
+age:
+<input type="text" name="age" id="age"><br>
+
+<input type="button" value="validate" onclick="validatestudent()"
+
+
+</form>
+
+
+</body>
+</html>
